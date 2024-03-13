@@ -897,9 +897,10 @@ menuBtn.addEventListener('click', rightMenu);
 
     window.onload = function() {
         const cookiesAccepted = getCookie('cookiesAccepted');
-        if (!cookiesAccepted) {
-            document.getElementById('cookieContainer').style.display = 'block';
+        if (cookiesAccepted) {
+            document.getElementById('cookieContainer').style.display = 'none';
         }
     };
+</script>
 </body>
 </html>
